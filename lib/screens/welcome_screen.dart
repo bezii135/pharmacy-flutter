@@ -15,17 +15,46 @@ class WelcomeScreen extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {
-                //   Navigater.push(context, MaterialPageRoute
-                //   builder:(context) =>
-                //    ) ;)
-                // },
+                  // Uncomment and replace with appropriate screen
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) => NextScreen()),
+                  // );
+                },
                 child: Text(
-                  "SKIP" ,
+                  "SKIP",
                   style: TextStyle(
-                    color: color(0xFF7165D6),
+                    color: Color(0xFF7165D6),
                     fontSize: 20,
-                  )
-                ), // Add a child to the TextButton
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 50),
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Image.asset("images/login.png"),
+            ),
+            SizedBox(height: 50),
+            Text(
+              "Falcon Pharmacy",
+              style: TextStyle(
+                color: Color(0xFF7165D6),
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
+                wordSpacing: 2,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              "Appoint Your Doctor",
+              style: TextStyle(
+                color: Color(0xFF7165D6),
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1,
+                wordSpacing: 2,
               ),
             ),
           ],
